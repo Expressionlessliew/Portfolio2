@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Dancing+Script&family=Dongle:wght@700&family=Pacifico&family=Roboto:wght@900&display=swap");
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* circle */
+.loader {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%; /* Make it a circle */
+  position: relative;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-iteration-count: 50;
+  animation-direction: alternate;
+}
+
+@keyframes example1 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 400px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 400px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+/* triangle */
+.loader2 {
+  width: 0;
+  height: 0;
+  border-left: 50px solid black;
+  border-right: 50px solid black;
+  border-bottom: 100px solid transparent;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: 50;
+  animation-direction: alternate;
+  z-index: 9999;
+}
+
+@keyframes example2 {
+  0% {
+    background-color: blue;
+    right: calc(50% - 50px);
+    top: calc(50% - 50px);
+  }
+  25% {
+    background-color: green;
+    right: calc(50% - 50px + 400px);
+    top: calc(50% - 50px);
+  }
+  50% {
+    background-color: yellow;
+    right: calc(50% - 50px + 400px);
+    top: calc(50% - 50px + 200px);
+  }
+  75% {
+    background-color: purple;
+    right: calc(50% - 50px);
+    top: calc(50% - 50px + 200px);
+  }
+  100% {
+    background-color: blue;
+    right: calc(50% - 50px);
+    top: calc(50% - 50px);
+  }
+}
+/* square */
+.loader3 {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  position: fixed;
+  top: 50%; /* Adjust the top value as needed */
+  right: 0;
+  transform: translate(-50%, -50%);
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: 50;
+  animation-direction: alternate;
+}
+
+@keyframes example3 {
+  100% {
+    background-color: green;
+    right: 0px;
+    top: 0px;
+  }
+  75% {
+    background-color: blue;
+    right: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: red;
+    right: 300px;
+    top: 200px;
+  }
+  25% {
+    background-color: orange;
+    right: 0px;
+    top: 200px;
+  }
+  0% {
+    background-color: green;
+    right: 0px;
+    top: 0px;
+  }
+}
+/* rectangle */
+.loader4 {
+  width: 200px; /* Adjust the width as desired */
+  height: 100px; /* Adjust the height as desired */
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-iteration-count: 50;
+  animation-direction: alternate;
+}
+
+@keyframes example4 {
+  100% {
+    background-color: white;
+    right: 0px;
+    bottom: 0px;
+  }
+  75% {
+    background-color: pink;
+    right: 500px;
+    bottom: 0px;
+  }
+  50% {
+    background-color: lightblue;
+    right: 500px;
+    bottom: 300px;
+  }
+  25% {
+    background-color: violet;
+    right: 0px;
+    bottom: 200px;
+  }
+  0% {
+    background-color: white;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+/* oval */
+.loader5 {
+  width: 160px;
+  height: 80px;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-radius: 90%; /* Set equal values for horizontal and vertical radii */
+  animation-name: example5;
+  animation-duration: 4s;
+  animation-iteration-count: 50;
+  animation-direction: alternate;
+}
+
+@keyframes example5 {
+  0% {
+    background-color: aliceblue;
+    transform: translate(0, 0);
+  }
+  50% {
+    background-color: aqua;
+    transform: translate(400px, 0);
+  }
+  100% {
+    background-color: aliceblue;
+    transform: translate(0, 0);
+  }
+}
+
+.loader6 {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  animation-name: example6;
+  animation-duration: 10s;
+  animation-iteration-count: 50;
+  animation-direction: alternate;
+}
+
+@keyframes example6 {
+  0% {
+    top: 0px;
+    bottom: 0px;
+    background-color: brown;
+  }
+  50%{
+    top: 500px;
+    bottom:0px;
+    background-color: azure;
+  }
+  100%{
+    top:0px;
+    bottom: 0px;
+    background-color: brown;
+  }
+}
+
+.glowing {
+  font-family: "Pacifico", cursive;
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px; /* Adjust the height as needed */
+}
+
+.glowing-text {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  animation: glowing 2s infinite;
+  text-align: center;
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px yellow;
+  }
+  50% {
+    text-shadow: 0 0 20px orange;
+  }
+  100% {
+    text-shadow: 0 0 5px yellow;
+  }
+}
+
+#myDiv {
+  display: none;
+}
