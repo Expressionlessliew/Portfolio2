@@ -1,5 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 *{
     padding: 0%;
     margin: 0%;
+}
+
+body{
     text-align: center;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#Name{
+  font-family: 'Abel', sans-serif;
+  text-decoration: underline;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.content {
+  /* Add padding to the content area to prevent text from hiding behind the navbar */
+  padding-left: 220px; /* Adjust this value based on your sidebar width */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full-width sidebar on smaller screens */
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    padding-left: 0; /* Remove the padding on smaller screens */
+  }
 }
