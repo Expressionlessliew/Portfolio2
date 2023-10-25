@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-*{
-    padding: 0%;
-    margin: 0%;
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
-body{
-    text-align: center;
-    font-family: 'Playpen Sans', cursive;
+body {
+  text-align: center;
+  font-family: "Playpen Sans", cursive;
 }
 
-#Name{
-  font-family: 'Abel', sans-serif;
+#Name {
+  font-family: "Abel", sans-serif;
   text-decoration: underline;
   font-size: 50px;
   margin-top: 10px;
@@ -48,8 +48,12 @@ body{
 }
 
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 .content {
   /* Add padding to the content area to prevent text from hiding behind the navbar */
@@ -67,4 +71,41 @@ body{
   .content {
     padding-left: 0; /* Remove the padding on smaller screens */
   }
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 10%;
+  margin: 10px;
+  width: 150px;
+  height: auto;
+  border: 0.5px solid; /* Changed border-width to border */
+  background-color: antiquewhite;
+  font-family: "Playpen Sans", cursive;
+  transition: background-color 0.3s; /* Added a smooth transition for color change */
+}
+
+button:hover {
+  background-color: black;
+  color: antiquewhite;
+  font-family: "Abel", sans-serif;
+  width: 150px;
+  height: auto;
+}
+
+img {
+  width: 120px;
+  height: auto;
+  margin-top: 240px;
+}
+
+.container {
+  color: white;
+}
+.dayContainer {
+  color: white;
 }
