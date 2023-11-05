@@ -100,12 +100,14 @@ button:hover {
 img {
   width: 120px;
   height: auto;
-  margin-top: 240px;
+  margin-top: 10px;
 }
 
 .container {
   color: white;
+  margin-top: 10px;
 }
 .dayContainer {
   color: white;
+  margin-top: 215px;
 }
