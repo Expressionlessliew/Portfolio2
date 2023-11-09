@@ -18,7 +18,7 @@ function time() {
   const day = new Date().getDay();
   const currentDay = days[day];
   const months = [
-    "1",
+    "1",      
     "2",
     "3",
     "4",
