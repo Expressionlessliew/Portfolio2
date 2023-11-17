@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 
 * {
   text-align: center;
@@ -60,3 +61,20 @@ img {
   margin-top: 215px;
 }
 
+#title {
+  font-size:50px ;
+  font-family: 'Vina Sans', sans-serif;
+}
+
+button {
+  margin: 10px 10px 10px 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white;
+}
