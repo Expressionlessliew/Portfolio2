@@ -60,20 +60,3 @@ img {
   color: white;
   margin-top: 215px;
 }
-
-#title {
-  font-size:50px ;
-  font-family: 'Vina Sans', sans-serif;
-}
-
-button {
-  margin: 10px 10px 10px 10px;
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 15px 32px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor:grab;
-  background-color: white;
-}
