@@ -17,7 +17,7 @@
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 16px;
+  padding-top: 5px;
 }
 
 .sidebar a {
@@ -46,17 +46,22 @@
   }
 }
 
-img {
-  width: 159px;
-  height: auto;
-  margin-top: 10px;
-}
-
 .container {
   color: white;
   margin-top: 10px;
 }
 .dayContainer {
   color: white;
-  margin-top: 215px;
+  margin-top: 100px;
+}
+
+#mew{
+  width: 160px;
+  height: auto;
+  margin-top: 10px
+}
+
+#cake{
+  width: 133px;
+  height: auto;
 }

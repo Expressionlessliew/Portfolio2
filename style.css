@@ -8,6 +8,7 @@
 body {
   text-align: center;
   font-family: "Playpen Sans", cursive;
+  background-color:azure;
 }
 
 #Name {
@@ -110,4 +111,10 @@ img {
 .dayContainer {
   color: white;
   margin-top: 215px;
+}
+
+#zinder1{
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
 }
