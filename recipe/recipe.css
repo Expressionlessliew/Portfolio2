@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 * {
   text-align: center;
   font-family: "Playpen Sans", cursive;
   padding: 0%;
   margin: 0%;
+  margin: 0;
+  overflow: hidden; /* Hide horizontal scrollbar */
+}
+
+body {
+  background-image: url(/assets/wallpaper.jpeg);
+  background-size: 770px;
+}
+
+.foodheader {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
 }
 
 .sidebar {
@@ -55,13 +68,38 @@
   margin-top: 100px;
 }
 
-#mew{
+#mew {
   width: 160px;
   height: auto;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
-#cake{
+#cake {
   width: 133px;
   height: auto;
+}
+
+.scrolling-image {
+  margin-top: 50px;
+  width: 359px;
+  height: auto;
+  animation: scrollImage 20s;
+}
+
+.scrolling-container {
+  overflow: hidden;
+  white-space: nowrap; /* Prevent the image from wrapping to the next line */
+}
+
+.scrolling-image {
+  animation: scrollImage 20s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes scrollImage {
+  0% {
+    transform: translateX(100%); /* Start position, off to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End position, off to the left */
+  }
 }

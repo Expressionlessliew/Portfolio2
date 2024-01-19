@@ -8,6 +8,22 @@
   margin: 0%;
 }
 
+.container {
+  color: white;
+  margin-top: 10px;
+}
+
+#cake{
+  height: auto;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#evee{
+  height: auto;
+  width: 160px;
+}
+
 .sidebar {
   height: 100%;
   width: 160px;
@@ -17,7 +33,7 @@
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 16px;
+  padding-top: 5px;
 }
 
 .sidebar a {
