@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
 
 * {
   text-align: center;
@@ -8,18 +9,27 @@
   margin: 0%;
 }
 
+#pokiheader {
+  font-family: "Moirai One", system-ui;
+  font-size: 60px;
+}
+
+.dayContainer {
+  color: white;
+  margin-top: 170px;
+}
 .container {
   color: white;
   margin-top: 10px;
 }
 
-#cake{
+#cake {
   height: auto;
   width: 300px;
   margin-bottom: 20px;
 }
 
-#evee{
+#evee {
   height: auto;
   width: 160px;
 }
@@ -47,4 +57,3 @@
 .sidebar a:hover {
   color: #f1f1f1;
 }
-
