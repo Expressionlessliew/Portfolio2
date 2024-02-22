@@ -12,6 +12,7 @@
 #pokiheader {
   font-family: "Moirai One", system-ui;
   font-size: 60px;
+  margin-bottom: 10px;
 }
 
 .dayContainer {

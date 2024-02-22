@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 
 * {
   text-align: center;
   font-family: "Playpen Sans", cursive;
   padding: 0%;
   margin: 0%;
+  overflow: hidden; /* Hide horizontal scrollbar */
 }
+
 
 .sidebar {
   height: 100%;
@@ -17,7 +20,7 @@
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 16px;
+  padding-top: 5px;
 }
 
 .sidebar a {
@@ -31,4 +34,29 @@
 .sidebar a:hover {
   color: #f1f1f1;
 }
+.container {
+  color: white;
+  margin-top: 10px;
+}
+.dayContainer {
+  color: white;
+  margin-top: 100px;
+}
 
+#note {
+  width: 133px;
+  height: auto;
+  margin-top: 10px;
+}
+
+#poke {
+  height: auto;
+  width: 160px;
+  margin-top: 5px;
+}
+
+.foot-header{
+  font-family: "Barriecito", system-ui;
+  text-align: center;
+  margin-left: 100%;
+}

@@ -2,26 +2,48 @@
 <html lang="en">
 <head>
     <title>notes</title>
+    <link rel="icon" type="jpg" href="/assets/dessert.png " />
     <link rel="stylesheet" href="/notes/notes.css" />
+    <script
+      src="https://kit.fontawesome.com/523a5e1da2.js"
+      crossorigin="anonymous"
+    ></script>
+
 </head>
 <body>
-    <div class="dayContainer">
-        <span id="day">Sunday</span>
-        <br>
-        <span id="date">1</span>
-        <span>-</span>
-        <span id="month">1</span>
-        <span>-</span>
-        <span id="year">2022</span>
-    </div>
-      <div class="container">
-        <span id="hours">00</span>
-        <span>:</span>
-        <span id="minutes">00</span>
-        <span>:</span>
-        <span id="seconds">00</span>
-        <span id="session">AM</span>
-    </div>
+    <div class="sidebar">
+        <img id="note" src="/assets/Note.gif" alt="cake" />
+        <br />
+        <a href="/home.html"
+          ><i class="fa-solid fa-house fa-fade" style="color: #bd0505"></i>
+          Home</a
+        >
+        <a href="/work/work.html"
+          ><i class="fa-solid fa-folder fa-shake" style="color: #ab1fc7"></i>
+          work</a
+        >
+        <div class="dayContainer">
+          <span id="day">Sunday</span>
+          <br />
+          <span id="date">1</span>
+          <span>-</span>
+          <span id="month">1</span>
+          <span>-</span>
+          <span id="year">2022</span>
+        </div>
+        <div class="container">
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+          <span id="session">AM</span>
+          <img id="poke" src="/assets/run.gif" alt="mew" />
+        </div>
+      </div>
+
+      <h1 id="foot-header" class="foot-header"> WEB-APP </h1>
+
     <script src="/notes/note.js"></script>
 </body>
 </html>
