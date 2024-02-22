@@ -57,3 +57,16 @@
 .sidebar a:hover {
   color: #f1f1f1;
 }
+
+body {
+  text-align: center;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.Roll-down {
+  border-radius: 10px;
+  margin-left: 200px;
+  margin-top: 10px;
+  width: 500px;
+  height: auto;
+}
