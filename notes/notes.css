@@ -7,7 +7,14 @@
   font-family: "Playpen Sans", cursive;
   padding: 0%;
   margin: 0%;
-  overflow: hidden; /* Hide horizontal scrollbar */
+}
+
+body {
+  background: linear-gradient(141deg, #e8acef 0%, #de71de 51%, #7c10c4 75%);
+  background-size: 770px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -36,11 +43,11 @@
 }
 .container {
   color: white;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .dayContainer {
   color: white;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 #note {
@@ -58,5 +65,23 @@
 .foot-header{
   font-family: "Barriecito", system-ui;
   text-align: center;
-  margin-left: 100%;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.webapp{
+  border-radius: 10px;
+  width: 500px;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 120px;
+  margin-top: 10px;
+}
+
+#webapp-cute{
+  width: 70px;
+  height: auto;
+  margin-top: 10px;
+
 }

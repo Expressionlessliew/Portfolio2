@@ -7,12 +7,15 @@
   font-family: "Playpen Sans", cursive;
   padding: 0%;
   margin: 0%;
-  overflow: hidden; /* Hide horizontal scrollbar */
 }
 
 body {
-  background-color: bisque;
+  background: linear-gradient(141deg, #e8e1b1 0%, #ebd67d 51%, #e7be4d 75%);
   background-size: 770px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .foodheader {
@@ -45,20 +48,6 @@ body {
   color: #f1f1f1;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
-}
-
 .container {
   color: white;
   margin-top: 10px;
@@ -80,26 +69,16 @@ body {
 }
 
 .scrolling-image {
-  margin-top: 50px;
-  width: 359px;
+  border-radius: 10px;
+  margin-left: 170px;
+  margin-top: 20px;
+  width: 500px;
   height: auto;
-  animation: scrollImage 20s;
+  margin-right: 120px;
 }
 
-.scrolling-container {
-  overflow: hidden;
-  white-space: nowrap; /* Prevent the image from wrapping to the next line */
-}
-
-.scrolling-image {
-  animation: scrollImage 20s linear infinite; /* Adjust the duration as needed */
-}
-
-@keyframes scrollImage {
-  0% {
-    transform: translateX(100%); /* Start position, off to the right */
-  }
-  100% {
-    transform: translateX(-100%); /* End position, off to the left */
-  }
+#desserts {
+  width: 70px;
+  height: auto;
+  margin-top: 10px;
 }
