@@ -19,11 +19,6 @@ body {
   margin-bottom: 10px;
 }
 
-#lines {
-  width: 100px;
-  height: auto;
-}
-
 .sidebar {
   height: 100%;
   width: 160px;
@@ -33,7 +28,9 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
+  transition: 0.5s;
   padding-top: 16px;
+
 }
 
 .sidebar a {
@@ -42,10 +39,23 @@ body {
   font-size: 20px;
   color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
 .sidebar a:hover {
   color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.open{
+  text-align: left;
 }
 
 .main {
