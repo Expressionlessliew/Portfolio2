@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 * {
+  font-family: "Playpen Sans", cursive;
+  text-align: center;
   padding: 0%;
   margin: 0%;
 }
 
 body {
-  text-align: center;
-  font-family: "Playpen Sans", cursive;
   background-color: azure;
 }
 
@@ -29,8 +29,6 @@ body {
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 16px;
-
 }
 
 .sidebar a {
@@ -46,18 +44,24 @@ body {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-  position: absolute;
+.container {
+  color: white;
+  margin-top: 5px;
+}
+.dayContainer {
+  color: white;
+  margin-top: 180px;
+}
+
+
+#open-menu {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  left: 0;
+  margin: 10px; /* Adjust margin as needed */
 }
-
-.open{
-  text-align: left;
-}
-
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   padding: 0px 10px;
@@ -69,23 +73,6 @@ body {
   }
   .sidebar a {
     font-size: 18px;
-  }
-}
-.content {
-  /* Add padding to the content area to prevent text from hiding behind the navbar */
-  padding-left: 220px; /* Adjust this value based on your sidebar width */
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .sidebar {
-    width: 100%; /* Full-width sidebar on smaller screens */
-    height: auto;
-    position: relative;
-  }
-
-  .content {
-    padding-left: 0; /* Remove the padding on smaller screens */
   }
 }
 
@@ -117,15 +104,6 @@ img {
   width: 120px;
   height: auto;
   margin-top: 10px;
-}
-
-.container {
-  color: white;
-  margin-top: 10px;
-}
-.dayContainer {
-  color: white;
-  margin-top: 215px;
 }
 
 #zinder1 {
