@@ -11,7 +11,8 @@
     ></script>
   </head>
   <body>
-    <div class="sidebar">
+    <div class="sidebar" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <img id="cake" src="../assets/sweet.gif" alt="cake" />
       <br />
       <a href="../home.html"
@@ -41,6 +42,7 @@
         <img id="mew" src="../assets/poi.gif" alt="mew" />
       </div>
     </div>
+    <span id="open-menu" onclick="openNav()">&#9776; </span>
     <h1 id="foodheader" class="foodheader">
       Foods Palace
       <img

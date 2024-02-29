@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Playpen+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-
 * {
   text-align: center;
   font-family: "Playpen Sans", cursive;
@@ -11,7 +10,7 @@
 
 body {
   background: linear-gradient(141deg, #e8e1b1 0%, #ebd67d 51%, #e7be4d 75%);
-  background-size: 770px;
+  background-size: 1770px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +32,7 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 5px;
+  transition: 0.5s;
 }
 
 .sidebar a {
@@ -42,6 +41,7 @@ body {
   font-size: 20px;
   color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
 .sidebar a:hover {
@@ -54,8 +54,18 @@ body {
 }
 .dayContainer {
   color: white;
-  margin-top: 100px;
+  margin-top: 70px;
 }
+
+#open-menu {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Adjust margin as needed */
+}
+
 
 #mew {
   width: 160px;
@@ -72,9 +82,10 @@ body {
   border-radius: 10px;
   margin-left: 170px;
   margin-top: 20px;
-  width: 500px;
-  height: auto;
   margin-right: 120px;
+  width: 50%; /* Set maximum width to 100% */
+  height: auto; /* Set height to auto to maintain aspect ratio */
+
 }
 
 #desserts {
