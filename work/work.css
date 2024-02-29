@@ -20,6 +20,7 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .sidebar a {
@@ -28,6 +29,7 @@ body {
   font-size: 20px;
   color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
 .sidebar a:hover {
@@ -47,6 +49,16 @@ body {
   margin-left: 160px; /* Same as the width of the sidenav */
   padding: 0px 10px;
 }
+
+#open-menu {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Adjust margin as needed */
+}
+
 
 @media screen and (max-height: 450px) {
   .sidebar {
