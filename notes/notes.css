@@ -13,7 +13,6 @@ body {
   background: linear-gradient(141deg, #e8acef 0%, #de71de 51%, #7c10c4 75%);
   background-size: 770px;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -27,7 +26,7 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 5px;
+  transition: 0.5s;
 }
 
 .sidebar a {
@@ -36,6 +35,8 @@ body {
   font-size: 20px;
   color: #818181;
   display: block;
+  transition: 0.3s;
+
 }
 
 .sidebar a:hover {
@@ -47,8 +48,25 @@ body {
 }
 .dayContainer {
   color: white;
-  margin-top: 130px;
+  margin-top: 90px;
 }
+
+.closebtn{
+  width: 20%;
+  height:auto;
+ size: large;
+}
+
+
+#open-menu {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Adjust margin as needed */
+}
+
 
 #note {
   width: 133px;
@@ -72,11 +90,11 @@ body {
 
 .webapp{
   border-radius: 10px;
-  width: 500px;
-  height: auto;
-  margin-left: 200px;
-  margin-right: 120px;
-  margin-top: 10px;
+  margin-left: 15%;
+  margin-top: 20px;
+  margin-right: 100px;
+  width: 70%; /* Set maximum width to 100% */
+  height: auto; /* Set height to auto to maintain aspect ratio */
 }
 
 #webapp-cute{

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Poki</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="jpg" href="../assets/pikachu.jpeg " />
     <link rel="stylesheet" href="../poki/poki.css" />
     <script
@@ -11,7 +11,8 @@
     ></script>
   </head>
   <body>
-    <div class="sidebar">
+    <div class="sidebar" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <img id="cake" src="../assets/pokiof2.gif" alt="cake" />
       <br />
       <a href="../home.html"
@@ -41,6 +42,8 @@
         <img id="evee" src="../assets/poke4.gif" alt="evee" />
       </div>
     </div>
+    <span id="open-menu" onclick="openNav()">&#9776; </span>
+
     <h1 id="pokiheader" class="pokiheader">
       Pokemon<img
         src="../assets/pikachu.jpeg"
@@ -65,7 +68,7 @@
       <img src="../assets/Poke 3.png" alt="Scrolling Image" class="Roll-down" />
       <img src="../assets/Poke 2.png" alt="Scrolling Image" class="Roll-down" />
     </div>
-    
+
     <script src="../poki/poki.js"></script>
   </body>
 </html>

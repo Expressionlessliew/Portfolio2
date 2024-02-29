@@ -22,6 +22,13 @@ body {
   margin-bottom: 20px;
 }
 
+.closebtn{
+  width: 20%;
+  height:auto;
+ size: large;
+}
+
+
 .sidebar {
   height: 100%;
   width: 160px;
@@ -79,10 +86,10 @@ body {
 
 .scrolling-image {
   border-radius: 10px;
-  margin-left: 170px;
+  margin-left: 15%;
   margin-top: 20px;
-  margin-right: 120px;
-  width: 50%; /* Set maximum width to 100% */
+  margin-right: 100px;
+  width: 70%; /* Set maximum width to 100% */
   height: auto; /* Set height to auto to maintain aspect ratio */
 
 }

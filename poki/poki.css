@@ -13,17 +13,21 @@ body {
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   background-size: 770px;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
 
 #pokiheader {
   font-family: "Moirai One", system-ui;
-  font-size: 60px;
+  font-size: 55px;
   margin-bottom: 20px;
 }
 
+.closebtn{
+  width: 20%;
+  height:auto;
+ size: large;
+}
 
 .sidebar {
   height: 100%;
@@ -34,7 +38,7 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 5px;
+  transition: 0.5s;
 }
 
 .sidebar a {
@@ -43,6 +47,7 @@ body {
   font-size: 20px;
   color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
 .sidebar a:hover {
@@ -51,16 +56,26 @@ body {
 
 .dayContainer {
   color: white;
-  margin-top: 170px;
+  margin-top: 100px;
 }
 .container {
   color: white;
   margin-top: 10px;
 }
 
+#open-menu {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+
 #cake {
   height: auto;
-  width: 300px;
+  width: 270px;
   margin-bottom: 20px;
 }
 
@@ -70,14 +85,12 @@ body {
 }
 
 .Roll-down {
-  
   border-radius: 10px;
-  margin-left: 200px;
-  margin-top: 10px;
-  width: 500px;
-  height: auto;
-  margin-right: 120px;
-
+  margin-left: 15%;
+  margin-top: 20px;
+  margin-right: 100px;
+  width: 70%; /* Set maximum width to 100% */
+  height: auto; /* Set height to auto to maintain aspect ratio */
 }
 
 #pikachu-cute {
