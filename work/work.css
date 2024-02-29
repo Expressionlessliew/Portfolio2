@@ -50,7 +50,7 @@ body {
   padding: 0px 10px;
 }
 
-#open-menu {
+span#open-menu {
   font-size: 30px;
   cursor: pointer;
   position: fixed;
