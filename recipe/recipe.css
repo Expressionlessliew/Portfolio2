@@ -22,12 +22,6 @@ body {
   margin-bottom: 20px;
 }
 
-.closebtn{
-  width: 20%;
-  height:auto;
- size: large;
-}
-
 
 .sidebar {
   height: 100%;
@@ -60,7 +54,7 @@ body {
 }
 .dayContainer {
   color: white;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 #open-menu {
