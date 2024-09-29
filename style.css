@@ -19,47 +19,28 @@ body {
   margin-bottom: 10px;
 }
 
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
+.topnav {
+  overflow: hidden;
+  background-color: wheat;
 }
 
-.sidebar a {
-  padding: 6px 8px 6px 16px;
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  font-size: 17px;
 }
 
-.sidebar a:hover {
-  color: #f1f1f1;
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
 }
 
-.container {
+.topnav a.active {
+  background-color: #04aa6d;
   color: white;
-  margin-top: 5px;
-}
-.dayContainer {
-  color: white;
-  margin-top: 180px;
-}
-
-#open-menu {
-  font-size: 30px;
-  cursor: pointer;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 10px; /* Adjust margin as needed */
 }
 
 .main {
@@ -100,18 +81,15 @@ button:hover {
   height: auto;
 }
 
-img {
-  width: 120px;
-  height: auto;
-  margin-top: 10px;
-}
-
 #zinder1 {
   width: 50px;
   height: auto;
   margin-top: 10px;
 }
 
-.Comments{
-  font-size: 25px;
+.container {
+  font-size: 19px;
+  margin-right: 10px;
+  float: right;
+  margin-top: 10px;
 }
