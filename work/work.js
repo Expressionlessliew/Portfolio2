@@ -1,59 +1,36 @@
 function time() {
-    const hours = new Date().getHours();
-    const minutes = new Date().getMinutes();
-    const seconds = new Date().getSeconds();
-    const session = document.getElementById("session");
-    const month = new Date().getMonth();
-    const year = new Date().getFullYear();
-    const date = new Date().getDate();
-    const days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
-    const day = new Date().getDay();
-    const currentDay = days[day];
-    const months = [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12",
-    ];
-    const currentMonth = months[month];
-  
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-    document.getElementById("date").innerHTML = date;
-    document.getElementById("month").innerHTML = currentMonth;
-    document.getElementById("year").innerHTML = year;
-    document.getElementById("day").innerHTML = currentDay;
-    console.log(currentDay);
-  
-    if (hours >= 12) {
-      session.innerHTML = "PM";
-    } else {
-      session.innerHTML = "AM";
-    }
+  let hours = new Date().getHours();
+  let minutes = new Date().getMinutes();
+  let seconds = new Date().getSeconds();
+  let session = document.getElementById("session");
+
+  // Convert 24-hour format to 12-hour format
+  if (hours === 0) {
+    hours = 12; // Midnight case
+  } else if (hours > 12) {
+    hours = hours - 12; // Convert hours greater than 12
   }
-  setInterval(time, 10);
-  
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+
+  // Add leading zero to minutes and seconds if needed
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
+  // Update AM/PM session
+  session.innerHTML = new Date().getHours() >= 12 ? "PM" : "AM";
+
+  // Update the HTML with the new time
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+}
+
+// Update the time every second
+setInterval(time, 1000);
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

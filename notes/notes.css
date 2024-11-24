@@ -83,11 +83,9 @@ body {
 }
 
 .webapp{
+  display: inline-block;
   border-radius: 10px;
-  margin-left: 15%;
-  margin-top: 20px;
-  margin-right: 100px;
-  width: 70%; /* Set maximum width to 100% */
+  width: 250px; /* Set maximum width to 100% */
   height: auto; /* Set height to auto to maintain aspect ratio */
 }
 
